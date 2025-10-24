@@ -1,0 +1,86 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eef2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers the box vertically */
+}
+
+/* ===== Password Checker Box ===== */
+.checker-container {
+  background: #ffffff;
+  width: 400px;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgb(194, 190, 255);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.checker-container:hover {
+  transform: translateY(-5px);
+}
+
+.checker-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* ===== Input Styling ===== */
+.password-input {
+  width: 90%;
+  color: #000;
+  padding: 12px;
+  border: 2px solid #ccc;
+  background-color: rgba(209, 203, 255, 0.285);
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.password-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgb(11, 157, 255);
+}
+
+/* ===== Strength Bar ===== */
+.strength-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* ===== Strength Text ===== */
+.strength-text {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ===== Password Tips ===== */
+.password-tips {
+  text-align: left;
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.password-tips li {
+  margin-bottom: 5px;
+}
